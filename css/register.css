@@ -15,7 +15,9 @@ input, select {
 }
 
 .inp-row input, select {
+  display: inline-block;
   border-color: #0891B2;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .inp-row, select {
@@ -29,5 +31,8 @@ input, select {
   border: 0px;
 }
 
-select, #submit-btn {
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 40%;
 }
