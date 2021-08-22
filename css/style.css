@@ -1,58 +1,6 @@
 body {
-  margin: 0;
-  font-family: Montserrat, sans-serif;
   background-image: url('../images/laptop_background.jpg');
   background-repeat: no-repeat;
-}
-
-.logo {
-  height: 3rem;
-}
-
-nav {
-  background-color: rgba(16, 185, 129, 0.91);
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-right: 5%;
-}
-
-nav {
-  padding: 0.5rem 1rem;
-}
-
-nav li {
-  padding: 0 0.4rem;
-  font-size: 1rem;
-  font-weight: 1000;
-}
-
-.nav-start {
-  margin-left: auto;
-}
-
-.logo {
-  height: 2rem;
-}
-
-.logo-li {
-  margin-top: 0.3rem;
-  flex-basis: 50%;
-}
-
-img {
-  display: inline-block;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
 }
 
 h1 {
@@ -96,4 +44,24 @@ h1 {
 
 .text-content p {
   font-weight: 400;
+}
+
+@media (max-width: 40em) {
+    .content-block {
+      flex-direction: column;
+    }
+
+  .image-on-left img {
+    order: 2;
+  }
+
+  .image-on-left .text-content {
+    order: 1;
+  }
+
+  .content-block img {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
 }
